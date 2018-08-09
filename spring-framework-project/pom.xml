@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-framework-build</artifactId>
+        <groupId>org.springframework</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-framework-project</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>spring-core</module>
+        <module>spring-beans</module>
+        <module>spring-expression</module>
+        <module>spring-aop</module>
+        <module>spring-context</module>
+        <module>spring-web</module>
+        <module>spring-webmvc</module>
+        <module>spring-oxm</module>
+        <module>spring-context-support</module>
+        <module>spring-tx</module>
+        <module>spring-jdbc</module>
+        <module>spring-orm</module>
+        <module>spring-websocket</module>
+        <module>spring-messaging</module>
+        <module>spring-jms</module>
+        <module>spring-webflux</module>
+    </modules>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-reflect</artifactId>
+            <version>1.2.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>2.4.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.13</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>3.1.4.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
